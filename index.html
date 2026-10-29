@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emil Llames | Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #101512;
+            color: #f2f4ef;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .nav {
+            width: 360px;
+            max-width: 92%;
+            margin: 24px auto;
+            padding: 6px;
+            text-align: center;
+            background-color: #1b231e;
+            border: 1px solid #354138;
+            border-radius: 40px;
+        }
+
+        .nav a {
+            display: inline-block;
+            padding: 8px 18px;
+            color: #dce4dc;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+
+        .nav a.active {
+            background-color: #c5f36b;
+            color: #152014;
+        }
+
+        .container {
+            width: 86%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            padding: 48px 0 72px;
+        }
+
+        .hero-photo {
+            display: inline-block;
+            width: 38%;
+            vertical-align: middle;
+        }
+
+        .hero-photo img {
+            display: block;
+            width: 100%;
+            border: 4px solid #26332a;
+            border-radius: 24px;
+        }
+
+        .hero-copy {
+            display: inline-block;
+            width: 57%;
+            margin-left: 4%;
+            vertical-align: middle;
+        }
+
+        .label {
+            color: #c5f36b;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 10px 0 18px;
+            font-size: 68px;
+            line-height: 1.05;
+        }
+
+        .hero-copy p {
+            max-width: 580px;
+            color: #c4cec5;
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 12px 10px 0 0;
+            padding: 11px 18px;
+            background-color: #c5f36b;
+            color: #152014;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 24px;
+        }
+
+        .button.secondary {
+            background-color: #26332a;
+            color: #f2f4ef;
+        }
+
+        .social-links {
+            margin-top: 24px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 18px 8px 0;
+            color: #dce4dc;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .band {
+            padding: 64px 0;
+            border-top: 1px solid #2a362d;
+        }
+
+        .band.alt {
+            background-color: #151c17;
+        }
+
+        .section-title {
+            margin: 4px 0 24px;
+            font-size: 38px;
+            line-height: 1.2;
+        }
+
+        .section-intro {
+            max-width: 620px;
+            color: #c4cec5;
+        }
+
+        .skill-box,
+        .project-box {
+            display: inline-block;
+            width: 46%;
+            margin: 0 3% 20px 0;
+            padding: 22px;
+            vertical-align: top;
+            background-color: #1b231e;
+            border: 1px solid #354138;
+            border-radius: 18px;
+        }
+
+        .skill-box h3,
+        .project-box h3 {
+            margin: 10px 0 6px;
+        }
+
+        .skill-box p,
+        .project-box p {
+            margin-bottom: 0;
+            color: #c4cec5;
+        }
+
+        .skill-icon {
+            width: 48px;
+            height: 48px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        .project-box img {
+            display: block;
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        .project-box a {
+            text-decoration: none;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 12px;
+            color: #c5f36b;
+            font-weight: bold;
+        }
+
+        footer {
+            padding: 24px 0;
+            color: #aeb9b0;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 760px) {
+            .container {
+                width: 90%;
+            }
+
+            .hero {
+                padding: 30px 0 48px;
+            }
+
+            .hero-photo,
+            .hero-copy {
+                display: block;
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .hero-photo {
+                max-width: 340px;
+                margin: 0 auto 28px;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+
+            .band {
+                padding: 48px 0;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .skill-box,
+            .project-box {
+                display: block;
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="aboutme.html">About</a>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-photo">
+                    <img src="images/photo.png" alt="Portrait of Emil Llames">
+                </div>
+
+                <div class="hero-copy">
+                    <p class="label">My dream is to become a web developer</p>
+                    <h1>Hi, I’m<br>Emil Llames.</h1>
+                    <p>I’m a BSIS student learning HTML and CSS. I like making websites and learning new things.</p>
+                    <a class="button" href="#projects">View my projects</a>
+                    <a class="button secondary" href="aboutme.html">More about me</a>
+
+                    <div class="social-links">
+                        <a href="https://github.com/Llames473">GitHub ↗</a>
+                        <a href="https://web.facebook.com/Ejay.LLames.6923">Facebook ↗</a>
+                        <a href="https://www.instagram.com/sminch723/?hl=en">Instagram ↗</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="band alt">
+            <div class="container">
+                <p class="label">What I’m learning</p>
+                <h2 class="section-title">My skills</h2>
+                <p class="section-intro">I practice HTML and CSS by making small websites.</p>
+
+                <div class="skill-box">
+                    <img class="skill-icon" src="images/html.png" alt="">
+                    <img class="skill-icon" src="images/css.png" alt="">
+                    <h3>HTML &amp; CSS</h3>
+                    <p>HTML gives my pages structure, and CSS adds style.</p>
+                </div>
+
+                <div class="skill-box">
+                    <h3>Everyday tools</h3>
+                    <p>I use Word, Excel, and PowerPoint for school.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="band" id="projects">
+            <div class="container">
+                <p class="label">Selected work</p>
+                <h2 class="section-title">Projects I’ve made</h2>
+
+                <div class="project-box">
+                    <a href="#projects">
+                        <img src="images/login.png" alt="Preview of my login page project">
+                    </a>
+                    <h3>Login Page</h3>
+                    <p>A login page I made for practice.</p>
+                </div>
+
+                <div class="project-box">
+                    <a href="https://llames473.github.io/Countdown-timer/">
+                        <img src="images/countdown.png" alt="Preview of my countdown timer website">
+                    </a>
+                    <h3>Countdown Timer Website</h3>
+                    <p>A simple countdown timer website.</p>
+                    <a class="project-link" href="https://llames473.github.io/Countdown-timer/">Visit project ↗</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">Made by Emil Llames · Student portfolio</div>
+    </footer>
+</body>
+</html>

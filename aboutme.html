@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emil Llames | About Me</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #101512;
+            color: #f2f4ef;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .nav {
+            width: 360px;
+            max-width: 92%;
+            margin: 24px auto;
+            padding: 6px;
+            text-align: center;
+            background-color: #1b231e;
+            border: 1px solid #354138;
+            border-radius: 40px;
+        }
+
+        .nav a {
+            display: inline-block;
+            padding: 8px 18px;
+            color: #dce4dc;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+
+        .nav a.active {
+            background-color: #c5f36b;
+            color: #152014;
+        }
+
+        .container {
+            width: 86%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .page-intro {
+            padding: 42px 0 64px;
+        }
+
+        .label {
+            color: #c5f36b;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 8px 0 16px;
+            font-size: 58px;
+            line-height: 1.1;
+        }
+
+        .intro-text {
+            max-width: 680px;
+            color: #c4cec5;
+            font-size: 18px;
+        }
+
+        .band {
+            padding: 60px 0;
+            border-top: 1px solid #2a362d;
+        }
+
+        .band.alt {
+            background-color: #151c17;
+        }
+
+        .section-title {
+            margin: 4px 0 24px;
+            font-size: 36px;
+            line-height: 1.2;
+        }
+
+        .detail-box,
+        .skill-box {
+            display: inline-block;
+            width: 46%;
+            margin: 0 3% 18px 0;
+            padding: 22px;
+            vertical-align: top;
+            background-color: #1b231e;
+            border: 1px solid #354138;
+            border-radius: 18px;
+        }
+
+        .detail-box h3,
+        .skill-box h3 {
+            margin: 0 0 8px;
+            color: #c5f36b;
+        }
+
+        .detail-box p,
+        .skill-box p {
+            margin: 6px 0;
+            color: #c4cec5;
+        }
+
+        .skill-box ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .skill-box li {
+            margin-bottom: 7px;
+            color: #c4cec5;
+        }
+
+        .contact-link {
+            color: #c5f36b;
+            font-weight: bold;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 18px 8px 0;
+            color: #dce4dc;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer {
+            padding: 24px 0;
+            color: #aeb9b0;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 760px) {
+            .container {
+                width: 90%;
+            }
+
+            .page-intro {
+                padding: 30px 0 48px;
+            }
+
+            h1 {
+                font-size: 44px;
+            }
+
+            .band {
+                padding: 46px 0;
+            }
+
+            .section-title {
+                font-size: 30px;
+            }
+
+            .detail-box,
+            .skill-box {
+                display: block;
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a class="active" href="aboutme.html">About</a>
+    </nav>
+
+    <main>
+        <section class="page-intro">
+            <div class="container">
+            <p class="label">About me</p>
+                <h1>A little about Emil.</h1>
+                <p class="intro-text">I’m a BSIS student learning web development. I want to improve by practicing and making more projects.</p>
+            </div>
+        </section>
+
+        <section class="band alt">
+            <div class="container">
+                <p class="label">My background</p>
+                <h2 class="section-title">Education &amp; experience</h2>
+
+                <div class="detail-box">
+                    <h3>Education</h3>
+                    <p><strong>Dr. Filemon C. Aguilar Memorial College of Las Piñas</strong></p>
+                    <p>BSIS · 2nd Year College</p>
+                </div>
+
+                <div class="detail-box">
+                    <h3>Experience</h3>
+                    <p><strong>IT Assistant · 2023-2024</strong></p>
+                    <p>TESDA Office</p>
+                    <p>Saint Francis of Assisi College - Las Piñas Campus</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="band">
+            <div class="container">
+                <p class="label">My skills</p>
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skill-box">
+                    <h3>Technical</h3>
+                    <ul>
+                        <li>Basic HTML and CSS</li>
+                        <li>Microsoft Word</li>
+                        <li>Microsoft Excel</li>
+                        <li>Microsoft PowerPoint</li>
+                    </ul>
+                </div>
+
+                <div class="skill-box">
+                    <h3>Personal</h3>
+                    <ul>
+                        <li>Teamwork and communication</li>
+                        <li>Time management</li>
+                        <li>Willing to learn new things</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="band alt">
+            <div class="container">
+                <p class="label">Contact</p>
+                <h2 class="section-title">Get in touch</h2>
+                <p>Email: <a class="contact-link" href="mailto:emilllames47@gmail.com">emilllames47@gmail.com</a></p>
+                <p>Phone: <a class="contact-link" href="tel:+639915886499">09915886499</a></p>
+
+                <div class="social-links">
+                    <a href="https://github.com/Llames473">GitHub ↗</a>
+                    <a href="https://web.facebook.com/Ejay.LLames.6923">Facebook ↗</a>
+                    <a href="https://www.instagram.com/sminch723/?hl=en">Instagram ↗</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">Made by Emil Llames · Student portfolio</div>
+    </footer>
+</body>
+</html>
